@@ -1,21 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap');
 
+/* Body and Basic Styles */
 body {
   height: 100vh;
   width: 100vw;
   display: flex;
+  overflow: hidden;
   position: relative;
   align-items: center;
   justify-content: center;
   background-color: #f7f3d8;
   font-family: 'Outfit', sans-serif;
-}
-
-#main {
-  height: 94vh;
-  width: 96vw;
-  overflow: auto;
-  background-color: #fff;
 }
 
 input,
@@ -24,6 +19,15 @@ button {
   box-shadow: none !important;
 }
 
+/* Main Div */
+#main {
+  height: 94vh;
+  width: 96vw;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+/* Custom Styles */
 .d-flex-around {
   display: flex;
   align-items: center;
@@ -34,6 +38,7 @@ button {
   color: #01d98b !important;
 }
 
+/* Font Weight */
 .fw-300 {
   font-weight: 300;
 }
@@ -54,6 +59,7 @@ button {
   font-weight: 700;
 }
 
+/* Colors and Navs styling */
 .nav-link {
   font-size: 1.1rem;
   color: #1e1e1e;
@@ -88,4 +94,11 @@ button {
 ::-webkit-scrollbar-thumb {
   background: #3e3e3e;
   border-radius: 10px;
+}
+
+/* Bottom tree image */
+.palm-image {
+  position: absolute;
+  bottom: -1.1rem;
+  left: -1rem;
 }
